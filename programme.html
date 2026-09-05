@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programme — Parti Renommiste du Québec</title>
+<link rel="icon" href="assets/drapeau-quebec-renommiste.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .tete-page {
+    background: var(--papier-clair);
+    border-bottom: 6px solid var(--noir);
+    padding: 60px 28px 50px;
+    text-align: center;
+  }
+  .tete-page h1 { font-size: clamp(32px, 4.6vw, 48px); margin: 14px 0 16px; }
+  .tete-page p { max-width: 60ch; margin: 0 auto; color: var(--encre); font-size: 18px; }
+
+  .engagements {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .engagement {
+    background: var(--papier-clair);
+    border: 2px solid var(--noir);
+    padding: 26px 22px;
+  }
+  .engagement .num {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    color: var(--jaune);
+    -webkit-text-stroke: 1.3px var(--noir);
+    margin-bottom: 10px;
+  }
+  .engagement h3 { font-size: 18px; margin-bottom: 8px; }
+  .engagement p { font-size: 14.5px; color: var(--encre); margin: 0; }
+  @media (max-width: 860px) { .engagements { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .engagements { grid-template-columns: 1fr; } }
+
+  .manifeste-intro {
+    background: var(--noir);
+    color: var(--papier-clair);
+  }
+  .manifeste-intro .wrap { padding: 56px 28px; }
+  .manifeste-intro h2 { color: var(--jaune-vif); font-size: 28px; margin-bottom: 14px; }
+  .manifeste-intro p { color: rgba(247,242,230,0.8); max-width: 70ch; }
+
+  .articles { display: flex; flex-direction: column; }
+  .article {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 24px;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--ligne);
+  }
+  .article .no {
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+    color: var(--rouge);
+    line-height: 1;
+  }
+  .article h3 { font-size: 19px; margin-bottom: 8px; }
+  .article p { color: var(--encre); margin: 0; font-size: 15.5px; }
+  @media (max-width: 620px) {
+    .article { grid-template-columns: 1fr; gap: 8px; }
+  }
+
+  .encadre-marechal {
+    background: var(--rouge);
+    color: var(--papier-clair);
+    padding: 34px 30px;
+    margin: 50px 0 10px;
+    border-left: 6px solid var(--jaune-vif);
+  }
+  .encadre-marechal h3 { color: var(--papier-clair); font-size: 20px; margin-bottom: 12px; }
+  .encadre-marechal p { color: rgba(247,242,230,0.9); margin: 0; font-size: 15.5px; }
+</style>
+</head>
+<body>
+
+<div class="bandeau">Fondé et dirigé par <strong>Roman Bouchard</strong> — la lutte des Rémunions commence ici</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-poing.png" alt="Logo du PRQ">
+      <span class="brand-text">PRQ<span>Parti Renommiste du Québec</span></span>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('nav.links').classList.toggle('ouvert')">☰</button>
+    <nav class="links">
+      <a href="index.html">Accueil</a>
+      <a href="programme.html" class="actif">Programme</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="equipe.html">Équipe</a>
+    </nav>
+  </div>
+</header>
+
+<div class="tete-page">
+  <p class="eyebrow">Le programme du PRQ</p>
+  <h1>Le Manifeste de l'Ouvrier Romançois</h1>
+  <p>Vingt-deux articles pour renommer notre façon de penser la politique : moins de bureaucratie, plus de propriété, et des communautés qui décident enfin pour elles-mêmes.</p>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">L'essentiel en bref</p>
+    <h2 style="font-size: 30px; margin-bottom: 30px;">Douze engagements du PRQ</h2>
+    <div class="engagements">
+      <div class="engagement"><div class="num">01</div><h3>Propriété privée absolue</h3><p>Sur son terrain, le propriétaire décide seul des règles. Personne d'autre n'a à s'en mêler.</p></div>
+      <div class="engagement"><div class="num">02</div><h3>Communautés volontaires</h3><p>Fin des divisions territoriales imposées. On choisit sa communauté, on ne la subit pas.</p></div>
+      <div class="engagement"><div class="num">03</div><h3>Fin de la bureaucratie d'État</h3><p>Police, pompiers, santé, assurances : des organisations civiles, financées librement, remplacent l'appareil gouvernemental.</p></div>
+      <div class="engagement"><div class="num">04</div><h3>Charité plutôt que taxation</h3><p>L'aide aux plus démunis passe par la générosité organisée, pas par un prélèvement obligatoire.</p></div>
+      <div class="engagement"><div class="num">05</div><h3>Monnaie libre</h3><p>Aucune monnaie d'État imposée. Banques, billets privés ou troc : le choix appartient aux gens.</p></div>
+      <div class="engagement"><div class="num">06</div><h3>Justice de proximité</h3><p>Chaque territoire applique ses propres règles. Le jugement se rend là où le geste a été posé.</p></div>
+      <div class="engagement"><div class="num">07</div><h3>Travail sans carcan</h3><p>Les employeurs fixent leurs conditions et leurs salaires librement, sans minimum imposé d'en haut.</p></div>
+      <div class="engagement"><div class="num">08</div><h3>Frontières citoyennes</h3><p>La protection des frontières revient aux citoyens eux-mêmes, pas à une bureaucratie lointaine.</p></div>
+      <div class="engagement"><div class="num">09</div><h3>Droits dès la conception</h3><p>Tout être humain a des droits pleins et entiers dès avant sa naissance, jusqu'à sa mort.</p></div>
+      <div class="engagement"><div class="num">10</div><h3>Exploitation libre des ressources</h3><p>Sur sa propriété, chacun exploite les ressources comme il l'entend, sauf règle qu'il se donne lui-même.</p></div>
+      <div class="engagement"><div class="num">11</div><h3>Papiers gérés par les civils</h3><p>Passeports, identité, documents légaux : émis et reconnus par des organismes privés, pas par l'État.</p></div>
+      <div class="engagement"><div class="num">12</div><h3>Union en temps de crise</h3><p>Une autorité de dernier recours, le Maréchal, coordonne la défense commune seulement en cas de guerre déclarée.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="manifeste-intro">
+  <div class="wrap">
+    <h2>Pourquoi ce manifeste</h2>
+    <p>Tout bon ouvrier réclame la même chose : l'égalité, la justice et la prospérité pour tous les travailleurs de son pays. Le PRQ parle pour le peuple. Ce manifeste décrit, article par article, notre façon de penser une nation gouvernée par ses citoyens et ses propriétaires — plutôt que par une administration qui s'enrichit sur leur dos. Nous ne prétendons pas imposer cette idéologie à qui que ce soit ; nous affirmons simplement qu'elle est la meilleure voie pour l'avenir de notre peuple. Un pouvoir centralisé qui abuse de ses citoyens, sans jamais en répondre, ne mérite pas de durer : c'est le titre même de « dirigeant », et le pouvoir sans compte à rendre qu'il porte, qui doit s'éteindre rapidement — pas par l'usure du temps, mais parce que nous choisissons d'y mettre fin. C'est ce que porte l'idéologie Renommiste : elle renomme votre façon de penser.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">Le texte intégral</p>
+    <h2 style="font-size: 30px; margin-bottom: 10px;">Les 22 articles</h2>
+    <p style="color: var(--encre); margin-bottom: 10px; max-width: 70ch;">Voici l'ensemble des articles du manifeste, dans leur ordre original.</p>
+
+    <div class="articles">
+      <div class="article">
+        <div class="no">1</div>
+        <div><h3>Abolition des lois imposées d'en haut</h3><p>Nous demandons l'abolition des lois établies par les dirigeants et les tyrannies auxquelles le peuple ne se rend même pas compte être soumis. Les lois seront créées par les tiers, sur leur propriété privée, par celui qui l'a payée — et lui seul. Des communautés ou coalitions volontaires pourront appliquer des lois communes, mais jamais le gouvernement.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">2</div>
+        <div><h3>Fin des divisions territoriales</h3><p>Pour fonder de vraies communautés, il faut abolir les découpages territoriaux imposés. Nous serions unis sous le seul nom de notre pays, et chacun choisirait librement de faire partie d'une, deux, ou plusieurs communautés.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">3</div>
+        <div><h3>Tout territoire est privé, neutre ou public</h3><p>Aucun territoire n'est public par défaut : tout est privé, sauf exception. On distingue la propriété privée (achetée, pleins droits), le territoire neutre (pas encore acheté, sous l'autorité du Maréchal jusqu'à la vente) et l'espace public (routes, ponts, trottoirs — modifiable en propriété privée si son propriétaire y consent). Chaque catégorie a ses propres droits d'établir des règles, d'interdire l'accès ou d'exploiter les ressources.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">4</div>
+        <div><h3>Abolition des institutions gouvernementales</h3><p>Police, pompiers, santé, assurances : toutes les institutions seront gérées par des tiers, financées librement — par taxes volontaires, paiements mensuels ou gratuité, selon ce que choisit chaque organisation. Le gouvernement n'y interviendra en aucun cas.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">5</div>
+        <div><h3>Fin de l'aide sociale d'État</h3><p>Sans moyen de prélèvement, l'État ne peut plus aider financièrement les citoyens dans le besoin. La charité privée prend le relais, selon les lois du territoire où son siège est établi.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">6</div>
+        <div><h3>Aucune monnaie officielle</h3><p>Il n'y a pas d'argent d'État. Des tiers créent leur propre unité monétaire — billets bancaires privés ou simple troc. Plusieurs monnaies peuvent coexister, ce qui favorise l'indépendance financière et limite l'inflation.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">7</div>
+        <div><h3>Toute organisation a un siège</h3><p>Une organisation doit posséder une propriété privée servant de siège, ou être fondée collectivement par une union de membres qui en devient le siège. Tout membre de cette union se plie alors aux lois de l'organisation.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">8</div>
+        <div><h3>Les lois du siège priment</h3><p>Si le siège d'une organisation est hébergé au pays, ce sont les lois de cette propriété privée qui s'appliquent ; à l'étranger, ce sont celles du pays hôte. Pour un site web, les lois du siège et celles du serveur s'appliquent, avec priorité au siège en cas de conflit.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">9</div>
+        <div><h3>La justice se rend par territoire</h3><p>Un crime est jugé selon les lois du territoire où il a été commis. Si la victime se trouve chez elle, ce sont ses propres lois qui s'appliquent au criminel ; si elle se trouve chez autrui, ce sont les lois du propriétaire des lieux. Chaque propriétaire décide de la sanction : jugement, tribunal collectif, ou détention organisée par des tiers.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">10</div>
+        <div><h3>L'emploi géré par des tiers</h3><p>Employeurs et dirigeants d'entreprise établissent librement leurs marchés, leurs règles d'embauche et leurs salaires, sans minimum imposé.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">11</div>
+        <div><h3>Toute propriété peut se vendre</h3><p>Un bon prix suffit à proposer un échange ; le propriétaire reste libre d'accepter ou de refuser. Les territoires neutres, eux, s'achètent au Maréchal à prix fixe au kilomètre carré, sans possibilité de refus. Une fois achetée, une propriété privée ne peut faire l'objet d'aucune expulsion forcée.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">12</div>
+        <div><h3>Liberté de reconnaissance</h3><p>Chaque propriété choisit ce qu'elle reconnaît ou non — y compris les contrats — à l'exception de ce manifeste, dont l'application est obligatoire partout.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">13</div>
+        <div><h3>Les personnes sans propriété</h3><p>Celles et ceux qui ne possèdent rien doivent trouver refuge sur un espace public qui le permet, ou une propriété qui les accueille. À défaut, elles devront se débrouiller par elles-mêmes.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">14</div>
+        <div><h3>Fin des documents gouvernementaux</h3><p>Il n'existe plus ni papiers ni certificats émis par l'État. Passeports, identité et documents légaux sont créés et reconnus par des organismes civils, qui s'occupent aussi de la reconnaissance internationale.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">15</div>
+        <div><h3>Des frontières confiées aux citoyens</h3><p>La protection des frontières repose sur la confiance mutuelle et la vigilance des civils. Le Maréchal en propose le tracé, sans obligation de reconnaissance, à titre de modèle recommandé.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">16</div>
+        <div><h3>Des droits de la conception à la mort</h3><p>Un enfant possède tous ses droits dès sa conception ; un adulte les conserve intégralement jusqu'à sa mort.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">17</div>
+        <div><h3>Exploitation libre des ressources</h3><p>Chacun peut exploiter les ressources de son propre territoire sans restriction, à moins d'une règle qu'il se serait lui-même donnée.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">18</div>
+        <div><h3>Copropriété sans limite</h3><p>Une propriété peut compter plusieurs propriétaires, nommés par le détenteur d'origine. Cependant, un copropriétaire nommé peut, en l'absence de règle contraire, destituer le propriétaire principal.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">19</div>
+        <div><h3>Ce que couvrent les espaces publics</h3><p>Routes, autoroutes, rues, trottoirs, ponts et passerelles sont déclarés d'avance par le Maréchal. Un espace public peut devenir propriété privée à tout moment, avec l'accord de son propriétaire.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">20</div>
+        <div><h3>Liberté totale, sous les lois du lieu</h3><p>La liberté n'a aucune restriction de principe, mais chacun se plie aux lois du territoire où il se trouve. Un territoire sans aucune loi devient un territoire libre, où tout est permis.</p></div>
+      </div>
+      <div class="article">
+        <div class="no">21</div>
+        <div><h3>Précisions et cas particuliers</h3><p>Une communauté ne peut appliquer une loi qu'aux propriétés qui en font partie. La propriété officielle exige l'achat complet du territoire. Une institution doit obtenir la permission du propriétaire avant d'exercer son pouvoir sur ses terres. Les droits fondamentaux restent applicables même sur un territoire sans loi, et aucune loi ne peut être appliquée rétroactivement à un acte déjà commis.</p></div>
+      </div>
+    </div>
+
+    <div class="encadre-marechal">
+      <h3>Article 22 — Le Maréchal, autorité de dernier recours</h3>
+      <p>En cas de guerre déclarée, le pays peut choisir de centraliser sa défense sous l'autorité du Maréchal, seul habilité à réquisitionner personnes, propriétés et monnaies pour financer l'effort commun, le temps de l'état d'urgence. Cette autorité se transmet par filiation directe, et à défaut, selon un ordre défini à l'avance — une exception assumée à la règle générale de décentralisation, réservée à la seule survie du pays.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-slogan">« Nous sommes tous de semblables nationalistes. » — Le Manifeste de l'Ouvrier Romançois</div>
+    <div class="footer-liens">
+      <div>
+        <h4>Le parti</h4>
+        <a href="index.html">Accueil</a>
+        <a href="programme.html">Programme</a>
+        <a href="equipe.html">Équipe</a>
+      </div>
+      <div>
+        <h4>Suivre</h4>
+        <a href="actualites.html">Actualités</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bas">Parti Renommiste du Québec — Fondé par Roman Bouchard</div>
+</footer>
+
+</body>
+</html>

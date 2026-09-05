@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Équipe — Parti Renommiste du Québec</title>
+<link rel="icon" href="assets/drapeau-quebec-renommiste.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .tete-page {
+    background: var(--papier-clair);
+    border-bottom: 6px solid var(--noir);
+    padding: 60px 28px 50px;
+    text-align: center;
+  }
+  .tete-page h1 { font-size: clamp(32px, 4.6vw, 48px); margin: 14px 0 16px; }
+  .tete-page p { max-width: 60ch; margin: 0 auto; color: var(--encre); font-size: 18px; }
+
+  .profil {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    align-items: start;
+    border: 3px solid var(--noir);
+    background: var(--papier-clair);
+    padding: 36px;
+  }
+  .profil-photo {
+    width: 100%;
+    aspect-ratio: 1;
+    background: var(--jaune);
+    border: 3px solid var(--noir);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .profil-photo img { width: 60%; }
+  .profil-role {
+    font-family: 'Oswald', sans-serif;
+    color: var(--rouge);
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .profil h2 { font-size: 28px; margin-bottom: 14px; }
+  .profil p { color: var(--encre); margin-bottom: 14px; }
+  @media (max-width: 620px) {
+    .profil { grid-template-columns: 1fr; }
+    .profil-photo { max-width: 200px; margin: 0 auto; }
+  }
+
+  .postes {
+    margin-top: 46px;
+  }
+  .poste {
+    border: 2px dashed var(--noir);
+    padding: 22px 24px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .poste h4 { font-size: 17px; margin-bottom: 4px; }
+  .poste p { margin: 0; color: var(--encre); font-size: 14.5px; }
+</style>
+</head>
+<body>
+
+<div class="bandeau">Fondé et dirigé par <strong>Roman Bouchard</strong> — la lutte des Rémunions commence ici</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-poing.png" alt="Logo du PRQ">
+      <span class="brand-text">PRQ<span>Parti Renommiste du Québec</span></span>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('nav.links').classList.toggle('ouvert')">☰</button>
+    <nav class="links">
+      <a href="index.html">Accueil</a>
+      <a href="programme.html">Programme</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="equipe.html" class="actif">Équipe</a>
+    </nav>
+  </div>
+</header>
+
+<div class="tete-page">
+  <p class="eyebrow">Qui porte le mouvement</p>
+  <h1>L'équipe du PRQ</h1>
+  <p>Un parti se construit d'abord par ceux qui portent l'idée. Voici qui dirige le PRQ aujourd'hui.</p>
+</div>
+
+<section class="section">
+  <div class="wrap">
+
+    <div class="profil">
+      <div class="profil-photo">
+        <img src="assets/logo-poing.png" alt="">
+      </div>
+      <div>
+        <div class="profil-role">Fondateur et chef du parti</div>
+        <h2>Roman Bouchard</h2>
+        <p>Roman Bouchard a fondé le Parti Renommiste du Québec autour du Manifeste de l'Ouvrier Romançois : une vision où la propriété privée, les communautés volontaires et la justice de proximité remplacent une bureaucratie d'État jugée hors de contrôle.</p>
+        <p>Il porte aujourd'hui seul les couleurs du parti, avec l'ambition de bâtir autour de lui l'équipe qui portera le mouvement des Rémunions à travers le Québec.</p>
+      </div>
+    </div>
+
+    <div class="postes">
+      <p class="eyebrow" style="margin-bottom: 20px;">Postes à pourvoir</p>
+      <div class="poste">
+        <div>
+          <h4>Vice-présidence du parti</h4>
+          <p>Seconder le chef et coordonner les instances régionales.</p>
+        </div>
+        <a href="mailto:contact@prq.quebec" class="bouton bouton-vide">Se proposer</a>
+      </div>
+      <div class="poste">
+        <div>
+          <h4>Responsable des communications</h4>
+          <p>Porter la voix du PRQ dans les médias et sur le terrain.</p>
+        </div>
+        <a href="mailto:contact@prq.quebec" class="bouton bouton-vide">Se proposer</a>
+      </div>
+      <div class="poste">
+        <div>
+          <h4>Organisation régionale</h4>
+          <p>Mettre sur pied les premières communautés de militants Rémunions.</p>
+        </div>
+        <a href="mailto:contact@prq.quebec" class="bouton bouton-vide">Se proposer</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-slogan">« Nous sommes tous de semblables nationalistes. » — Le Manifeste de l'Ouvrier Romançois</div>
+    <div class="footer-liens">
+      <div>
+        <h4>Le parti</h4>
+        <a href="index.html">Accueil</a>
+        <a href="programme.html">Programme</a>
+        <a href="equipe.html">Équipe</a>
+      </div>
+      <div>
+        <h4>Suivre</h4>
+        <a href="actualites.html">Actualités</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bas">Parti Renommiste du Québec — Fondé par Roman Bouchard</div>
+</footer>
+
+</body>
+</html>

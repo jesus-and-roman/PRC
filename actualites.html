@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actualités — Parti Renommiste du Québec</title>
+<link rel="icon" href="assets/drapeau-quebec-renommiste.png">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .tete-page {
+    background: var(--papier-clair);
+    border-bottom: 6px solid var(--noir);
+    padding: 60px 28px 50px;
+    text-align: center;
+  }
+  .tete-page h1 { font-size: clamp(32px, 4.6vw, 48px); margin: 14px 0 16px; }
+  .tete-page p { max-width: 60ch; margin: 0 auto; color: var(--encre); font-size: 18px; }
+
+  .vide {
+    border: 2px dashed var(--noir);
+    padding: 60px 30px;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .vide img { width: 64px; margin: 0 auto 22px; }
+  .vide h3 { font-size: 22px; margin-bottom: 10px; }
+  .vide p { color: var(--encre); max-width: 44ch; margin: 0 auto; }
+
+  /* Gabarit de communiqué prêt à dupliquer — laissé en commentaire dans le code */
+  .communique {
+    border: 2px solid var(--noir);
+    background: var(--papier-clair);
+    padding: 26px 26px;
+    margin-bottom: 22px;
+  }
+  .communique .date {
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+    color: var(--rouge);
+    margin-bottom: 8px;
+  }
+  .communique h3 { font-size: 21px; margin-bottom: 10px; }
+  .communique p { color: var(--encre); margin: 0; }
+</style>
+</head>
+<body>
+
+<div class="bandeau">Fondé et dirigé par <strong>Roman Bouchard</strong> — la lutte des Rémunions commence ici</div>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo-poing.png" alt="Logo du PRQ">
+      <span class="brand-text">PRQ<span>Parti Renommiste du Québec</span></span>
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('nav.links').classList.toggle('ouvert')">☰</button>
+    <nav class="links">
+      <a href="index.html">Accueil</a>
+      <a href="programme.html">Programme</a>
+      <a href="actualites.html" class="actif">Actualités</a>
+      <a href="equipe.html">Équipe</a>
+    </nav>
+  </div>
+</header>
+
+<div class="tete-page">
+  <p class="eyebrow">Communiqués et prises de position</p>
+  <h1>Actualités du PRQ</h1>
+  <p>Suivez ici les déclarations officielles, les annonces et les prises de position du parti.</p>
+</div>
+
+<section class="section">
+  <div class="wrap">
+
+    <!--
+      GABARIT DE COMMUNIQUÉ — copie ce bloc pour ajouter une actualité,
+      puis retire ce commentaire et le bloc ".vide" plus bas une fois
+      qu'au moins un communiqué est publié.
+
+      <div class="communique">
+        <div class="date">5 septembre 2026</div>
+        <h3>Titre du communiqué</h3>
+        <p>Texte du communiqué…</p>
+      </div>
+    -->
+
+    <div class="vide">
+      <img src="assets/logo-poing.png" alt="">
+      <h3>Aucune actualité pour l'instant</h3>
+      <p>Le premier communiqué du PRQ s'en vient. Revenez bientôt, ou consultez le programme du parti en attendant.</p>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-slogan">« Nous sommes tous de semblables nationalistes. » — Le Manifeste de l'Ouvrier Romançois</div>
+    <div class="footer-liens">
+      <div>
+        <h4>Le parti</h4>
+        <a href="index.html">Accueil</a>
+        <a href="programme.html">Programme</a>
+        <a href="equipe.html">Équipe</a>
+      </div>
+      <div>
+        <h4>Suivre</h4>
+        <a href="actualites.html">Actualités</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bas">Parti Renommiste du Québec — Fondé par Roman Bouchard</div>
+</footer>
+
+</body>
+</html>
